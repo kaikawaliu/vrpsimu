@@ -1,0 +1,33 @@
+
+<TypeConfig>
+    <Default>SHMEM</Default>
+    <VRPImpSub>SHMEM</VRPImpSub>
+    <VRPImpPub>SHMEM</VRPImpPub>
+
+</TypeConfig>
+
+
+<SHMEM>
+    <Default>
+        <SHMName>CommonSharedSpace</SHMName>
+        <SHMSize>50000</SHMSize>
+    </Default>
+
+    <VRPImpSub>
+        <SHMName>VRPImpSpace</SHMName>
+    </VRPImpSub>
+    <VRPImpPub>
+        <SHMName>VRPImpPubSpace</SHMName>
+    </VRPImpPub>
+</SHMEM>
+
+<STKUDP>
+    <Default>
+         <subnet>  192.168.2.*  </subnet>
+        <subnet>  10.1.153.*  </subnet>
+        <RecvSampleSize> 5 </RecvSampleSize>
+        <RecvSocketSize> 500 </RecvSocketSize>
+    </Default>
+
+
+</STKUDP>

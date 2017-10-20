@@ -1,0 +1,19 @@
+
+
+<RTI>
+	<Default>
+        <Domain> 0 </Domain>
+        <Topic> DefaultTopic</Topic>
+	</Default>
+	
+    <RTI1>
+		<Topic> Test1	</Topic>	
+    </RTI1>
+
+    <RTI2>
+		<Topic> Test0	</Topic>	
+    </RTI2>
+</RTI>
+
+
+

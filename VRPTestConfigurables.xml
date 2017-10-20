@@ -1,0 +1,50 @@
+<Agent>
+	<Agent_Group>12</Agent_Group>
+</Agent>
+
+<Landmark>
+	<Landmark_Group>5001</Landmark_Group>
+</Landmark>
+
+<FMSDataBase>
+	<HostName>10.1.153.89</HostName>
+	<Port>3306</Port>
+	<DatabaseName>FMS</DatabaseName>
+	<Username>FMSS_General</Username>
+	<Password>common1234</Password>
+</FMSDatabase>
+
+<VRPDataBase>
+	<HostName>10.1.153.89</HostName>
+	<Port>3306</Port>
+	<DatabaseName>VRP</DatabaseName>
+	<Username>FMSS_General</Username>
+	<Password>common1234</Password>
+</VRPDatabase>
+
+<CusRSTimes>
+	<time0>0</time0>
+	<time1>600</time1>
+	<time2>1800</time2>
+	<time3>3600</time3>
+</CusRSTimes>
+
+<CusWTimes>
+	<time0>300</time0>
+	<time1>600</time1>
+	<time2>900</time2>
+</CusWTimes>
+
+<StartHour>9</StartHour>
+
+<EndHour>18</EndHour>
+
+<VehDefaultParams>
+	<speed>10</speed>
+	<capacity>10</capacity>
+	<launchcost>300</launchcost>
+	<fixtime>10</fixtime>
+	<unittime>5</unittime>
+	<refueltime>36000</refueltime>
+	<buffertime>300</buffertime>
+</VehDefaultParams>

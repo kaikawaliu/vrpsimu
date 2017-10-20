@@ -1,0 +1,133 @@
+
+<TypeConfig>
+    <Default>RTI</Default>
+
+    <SHMEM_Default>SHMEM</SHMEM_Default>
+    <SHMEM_Specific>SHMEM</SHMEM_Specific>
+
+    <STKUDP_Multicast>STKUDP</STKUDP_Multicast>
+    <STKUDP_Unicastto89>STKUDP</STKUDP_Unicastto89>
+    <STKUDP_Unicastto88>STKUDP</STKUDP_Unicastto88>
+    <STKUDP_Unicastto71>STKUDP</STKUDP_Unicastto71>
+    <STKUDP_Unicastto88Platform>STKUDP</STKUDP_Unicastto88Platform>
+    <STKUDP_UnicastAll>STKUDP</STKUDP_UnicastAll>
+
+    <STKTCP_1>STKTCP</STKTCP_1>
+
+    <RTI1>RTI</RTI1>
+    <RTI2>RTI</RTI2>
+    <LogFile1>LogFile</LogFile1>
+
+</TypeConfig>
+
+<Location>
+    <RTI>TestRTIConfig.xml</RTI>
+</Location>
+
+<LogFile>
+    <LogFile1>
+        <FileName> TestingLog  </FileName>
+    </LogFile1>
+</LogFile>
+
+
+<SHMEM>
+    <Default>
+        <SHMName> CommonSharedSpace</SHMName>
+        <SHMSize> 50000 </SHMSize>
+    </Default>
+
+    <SHMEM_Specific>
+        <SHMName> Test1Shared   </SHMName>
+    </SHMEM_Specific>
+</SHMEM>
+
+<STKUDP>
+    <Default>
+         <subnet>  192.168.2.*  </subnet>
+        <subnet>  10.1.153.*  </subnet>
+        <RecvSampleSize> 5 </RecvSampleSize>
+        <RecvSocketSize> 500 </RecvSocketSize>
+    </Default>
+
+    <STKUDP_Multicast>
+        <Destination>
+            <Address> 225.45.38.153</Address>
+            <Port>10000</Port>
+        </Destination>
+    </STKUDP_Multicast>
+
+
+    <STKUDP_Unicastto71>
+        <Destination>
+            <Address> 192.168.2.71</Address>
+            <Address> 10.1.153.71</Address>
+            <Port>25000</Port>
+        </Destination>
+    </STKUDP_Unicastto71>
+
+    <STKUDP_Unicastto89>
+        <Destination>
+            <Address> 192.168.2.89</Address>
+            <Address> 10.1.153.89</Address>
+            <Port>10001</Port>
+        </Destination>
+    </STKUDP_Unicastto89>
+
+    <STKUDP_Unicastto88>
+        <Destination>
+            <Address> 192.168.2.88</Address>
+            <Address> 10.1.153.88</Address>
+            <Port>10011</Port>
+        </Destination>
+    </STKUDP_Unicastto88>
+
+    <STKUDP_Unicastto88>
+        <Destination>
+            <Address> 10.1.153.245</Address>
+            <Port>10011</Port>
+        </Destination>
+    </STKUDP_Unicastto88>
+
+    <STKUDP_Unicastto88Platform>
+        <Destination>
+            <Address> 10.1.153.245</Address>
+            <Port>10015</Port>
+        </Destination>
+    </STKUDP_Unicastto88Platform>
+
+
+    <STKUDP_UnicastAll>
+        <Destination>
+            <Address> 10.1.153.89</Address>
+            <Port>10001</Port>
+        </Destination>
+        <Destination>
+            <Address> 10.1.153.88</Address>
+            <Port>10001</Port>
+        </Destination>
+        <Destination>
+            <Address> 10.1.153.89</Address>
+            <Port>10011</Port>
+        </Destination>
+        <Destination>
+            <Address> 10.1.153.245</Address>
+            <Port>10015</Port>
+        </Destination>
+    </STKUDP_UnicastAll>
+</STKUDP>
+
+<STKTCP>
+    <Default>
+        <subnet>  10.1.153.*  </subnet>
+        <RecvSampleSize> 5 </RecvSampleSize>
+        <RecvSocketSize> 500 </RecvSocketSize>
+    </Default>
+
+    <STKTCP_1>
+        <Destination>
+            <Address> 10.1.153.89</Address>
+            <Port>10002</Port>
+        </Destination>
+    </STKTCP_1>
+</STKTCP>
